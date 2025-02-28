@@ -18,14 +18,14 @@ void Print(std::string s)
  
 int main()
 {
-	
-  std::string_view view{ "hello" };  
-  print << view << endl;
-  
- //Print (view);   Will not work 
- Print(static_cast<std::string>(view));    //Casting explicitly
- 
- 
+
+	std::string_view view{ "hello" };
+	print << view << endl;
+
+	//Print (view);   Will not work 
+	Print(static_cast<std::string>(view));    //Casting explicitly
+
+
  
   while(1);
   return 0;
